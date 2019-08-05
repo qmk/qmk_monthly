@@ -7,8 +7,6 @@ layout: default
 {% if forloop.first == true %}
 # [{{ issue.title }}]({{ issue.url }})
 
-Posted {{ issue.date | date: "%Y-%m-%d" }}
-
 {{ issue.content | markdownify }}
 
 ## Previous Issues:
