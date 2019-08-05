@@ -3,11 +3,9 @@ title: "QMK Monthly"
 layout: default
 ---
 
-{% for issue in site.issues reversed limit:1 %}
-<h3><a href="{{ issue.url }}">{{ issue.title }}</a></h3>
+{% for issue in site.issues %}
+<h1><a href="{{ issue.url }}">{{ issue.title }}</a></h1>
+{% if forloop.first == true %}
 <p>{{ issue.content | markdownify }}</p>
-{% endfor %}
-
-{% for issue in site.issues reversed offset:1 %}
-<h3><a href="{{ issue.url }}">{{ issue.title }}</a></h3>
+{% endif %}
 {% endfor %}
