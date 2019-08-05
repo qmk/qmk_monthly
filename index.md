@@ -8,6 +8,8 @@ layout: default
 # [{{ issue.title }}]({{ issue.url }})
 {{ issue.content | markdownify }}
 
+## Previous Issues:
+
 {% else %}
   * [{{ issue.title }}]({{ issue.url }})
 {% endif %}
