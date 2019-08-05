@@ -4,8 +4,11 @@ layout: default
 ---
 
 {% for issue in site.issues reversed %}
-<h1><a href="{{ issue.url }}">{{ issue.title }}</a></h1>
 {% if forloop.first == true %}
-<p>{{ issue.content | markdownify }}</p>
+# [{{ issue.title }}]{{ issue.url }}
+{{ issue.content | markdownify }}
+
+{% else %}
+  * [{{ issue.title }}]({{ issue.url }})
 {% endif %}
 {% endfor %}
