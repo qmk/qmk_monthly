@@ -10,7 +10,6 @@ collections:
   issues:
     output: true
     permalink: /:name
-theme: jekyll-theme-minima
 gems:
   - jekyll-feed
   - jekyll-redirect-from
