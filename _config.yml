@@ -3,7 +3,7 @@ email: hello@qmk.fm
 show_downloads: true
 description: The montly newsletter about the on-goings of QMK Firmware and related projects
 baseurl: ""
-url: "https://montly.qmk.fm"
+url: "https://monthly.qmk.fm"
 github_username: qmk
 repository: qmk/qmk_monthly
 collections:
