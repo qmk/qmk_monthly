@@ -1,0 +1,16 @@
+title: QMK Monthly
+email: hello@qmk.fm
+show_downloads: true
+description: The montly newsletter about the on-goings of QMK Firmware and related projects
+baseurl: ""
+url: "https://montly.qmk.fm"
+github_username: qmk
+repository: qmk/qmk_monthly
+collections:
+  issues:
+    output: true
+    permalink: /:name
+theme: jekyll-theme-minimal
+gems:
+  - jekyll-feed
+  - jekyll-redirect-from
